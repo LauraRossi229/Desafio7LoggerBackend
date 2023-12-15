@@ -4,3 +4,31 @@
 [31mfatal[39m: GET es /mockingproducts - 07:39:13
 [31mfatal[39m: POST es /api/mockingproducts - 08:15:13
 [31mfatal[39m: POST es /api/mockingproducts - 08:15:13
+[31mfatal[39m: GET es /info - 09:36:56
+[31mfatal[39m: GET es /info - 09:36:56
+[34minfo[39m: Info
+[31mfatal[39m: GET es /debug - 09:39:00
+[31mfatal[39m: GET es /debug - 09:39:00
+[31mfatal[39m: GET es /warning - 09:40:35
+[31mfatal[39m: GET es /warning - 09:40:35
+[33mwarning[39m: Warning
+[33mwarning[39m: Warning
+[31mfatal[39m: GET es /error - 09:41:28
+[31mfatal[39m: GET es /error - 09:41:28
+[31mfatal[39m: GET es /error - 09:43:25
+[31mfatal[39m: GET es /error - 09:43:25
+[31merror[39m: Error
+[31merror[39m: Error
+[31mfatal[39m: GET es /fatal - 09:44:21
+[31mfatal[39m: GET es /fatal - 09:44:21
+[31mfatal[39m: Fatal
+[31mfatal[39m: Fatal
+[31mfatal[39m: GET es /loggerTest - 09:45:02
+[31mfatal[39m: GET es /loggerTest - 09:45:02
+[33mwarning[39m: Warning message
+[34minfo[39m: Info message
+[31merror[39m: Error message
+[33mwarning[39m: Warning message
+[31mfatal[39m: Fatal message
+[31merror[39m: Error message
+[31mfatal[39m: Fatal message

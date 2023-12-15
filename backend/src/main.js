@@ -13,6 +13,7 @@ import nodemailer from "nodemailer";
 import { __dirname } from "./path.js";
 import compression from 'express-compression';
 import { addLogger } from "./utils/logger.js"; 
+import loggerRouter from "./routes/logger.routes.js"
 
 const whiteList = ["http://127.0.0.1:5173", "http://localhost:5173"];
 
@@ -110,33 +111,11 @@ app.use((req, res, next) => {
 //Routes
 app.use("/", router);
 
-//Routes Logger
-app.use(addLogger)
-app.get('/info', (req, res) => {
-    req.logger.info("Info")
-    res.send("Info!")
-})
+// Routes Logger
+app.use(addLogger);
 
-app.get('/debug', (req, res) => {
-    req.logger.info("Debug")
-    res.send("debug!")
-})
-
-app.get('/warning', (req, res) => {
-    req.logger.info("Warning")
-    res.send("Warning!")
-})
-
-app.get('/error', (req, res) => {
-    req.logger.info("Error")
-    res.send("Error!")
-})
-
-app.get('/fatal', (req, res) => {
-    req.logger.info("Fatal")
-    res.send("Fatal!")
-})
-
+// Uso de las rutas del logger
+app.use(loggerRouter);
 
 const serverExpress = app.listen(PORT, () => {
   console.log(`Server on port ${PORT}`);

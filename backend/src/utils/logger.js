@@ -10,8 +10,8 @@ const customLevelOpt = {
     },
     colors: {
         fatal: 'red',
-        error: 'orange',
-        warining: 'yellow',
+        error: 'red',
+        warning: 'yellow',
         info: 'blue',
         debug: 'green'
     }
